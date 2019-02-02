@@ -48,7 +48,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_1m_Then2m(){
+    public void when_cardList1_amountIs_1m_And_Then_2m(){
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
         List<TransferTransaction> transactions2 = cardManager.getTransferTransactions(2000000L);
@@ -58,7 +58,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_6m_Then1m(){
+    public void when_cardList1_amountIs_6m_And_Then_1m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -73,7 +73,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_4m_And_Then_2m(){
+    public void when_cardList1_amountIs_4m_And_And_Then__2m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -90,7 +90,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_2m_And_Then_2m(){
+    public void when_cardList1_amountIs_2m_And_And_Then__2m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -106,7 +106,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_3m_And_Then_5m(){
+    public void when_cardList1_amountIs_3m_And_And_Then__5m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
