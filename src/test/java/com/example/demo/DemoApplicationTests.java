@@ -37,7 +37,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_2500000(){
+    public void GetTransferTransactions_oneCallOfMethod_minTransferSelected(){
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList1());
         List<TransferTransaction> transactions2 = cardManager.getTransferTransactions(2500000L);
@@ -48,7 +48,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_1m_And_Then_2m(){
+    public void GetTransferTransactions_oneCallOfMethod_minTransferSelected2(){
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
         List<TransferTransaction> transactions2 = cardManager.getTransferTransactions(2000000L);
@@ -58,7 +58,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_6m_And_Then_1m(){
+    public void GetTransferTransactions_TwoCallOfMethodFirstGetAllAmount_minTransferSelected(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -73,7 +73,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_4m_And_And_Then__2m(){
+    public void GetTransferTransactions_TwoCallOfMethodFirstGetSomeAmount_minTransferSelected1(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -90,7 +90,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_2m_And_And_Then__2m(){
+    public void GetTransferTransactions_TwoCallOfMethodFirstGetSomeAmount_minTransferSelected2(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -106,7 +106,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_3m_And_And_Then__5m(){
+    public void GetTransferTransactions_TwoCallOfMethodFirstGetSomeAmountSecondMoreThanTotal_FirstMinTransferSelectedSecondEmpty(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
