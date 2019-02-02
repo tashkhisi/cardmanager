@@ -73,7 +73,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_4m_Then_2m(){
+    public void when_cardList1_amountIs_4m_And_Then_2m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -90,7 +90,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_2m_Then_2m(){
+    public void when_cardList1_amountIs_2m_And_Then_2m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
@@ -106,7 +106,7 @@ public class DemoApplicationTests {
     }
 
     @Test
-    public void when_cardList1_amountIs_3m_Then_5m(){
+    public void when_cardList1_amountIs_3m_And_Then_5m(){
 
         CardManager cardManager = new CardManager();
         cardManager.initialize(getCardList2());
